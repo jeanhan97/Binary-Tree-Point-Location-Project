@@ -1,0 +1,58 @@
+/*
+ * Name: Ji Eun Han
+ * Assignment: Project 03
+ * Section: TR 9:40am
+ * Lab TA: Chengyu Deng, Matt Delsordo
+ * I collaborated with Mackenzie Lee. 
+ */
+ 
+ OUTPUT
+ 
+ Ji Eun Han
+ jhan46@u.rochester.edu
+ Partner: Mackenzie Lee 
+ 
+ Below is a sample output result for the given input format information in the instruction sheet
+ with 5 lines and 2 pairs of points to compare the region in. I did add one more pair of point 
+ to check in a case where the pair are not in the same region since the two sample pairs in the 
+ instructions were both in the same region.  
+ 
+Write the number of lines:
+5
+Type in line coordinates by 'x1 y1 x2 y2' structure
+0.00 0.12 0.23 1.00
+1.00 0.41 0.00 0.52
+1.00 0.20 0.30 1.00
+0.00 0.40 0.10 0.00
+1.00 0.35 0.10 1.00
+Input pairs of points to be tested by 'x1 y1 x2 y2' structure. To stop write 'done'.
+0.25 0.80 0.60 0.50
+The points are in the same region.
+0.95 0.10 0.11 0.50
+The points are in the same region.
+0.25 0.80 0.11 0.50
+The points aren't in the same region.
+done
+Number of External Nodes in Tree: 10
+External Path Length: 40.0
+Average Path Length: 4.0
+
+Using the input from SAMPLE text file 
+
+Write the number of lines:
+3
+Type in line coordinates by 'x1 y1 x2 y2' structure
+0.00 0.24 0.68 0.02
+1.00 0.42 0.00 0.82
+1.00 0.40 0.10 1.00
+Input pairs of points to be tested by 'x1 y1 x2 y2' structure. To stop write 'done'.
+0.24 0.80 0.10 0.97
+The points are in the same region.
+0.95 0.78 0.24 0.46
+The points aren't in the same region.
+done
+Number of External Nodes in Tree: 4
+External Path Length: 13.0
+Average Path Length: 3.25
+
+ 

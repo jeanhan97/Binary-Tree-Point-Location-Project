@@ -1,0 +1,42 @@
+/*
+ * Name: Ji Eun Han
+ * Assignment: Project 03
+ * Section: TR 9:40am
+ * Lab TA: Chengyu Deng, Matt Delsordo
+ * I collaborated with Mackenzie Lee. 
+ */
+ 
+ README
+ 
+ First the user inputs the number of lines they'd like to input in the tree. The program takes the 
+ coordinates of the line to build a tree by calling the method insertLine from BinaryTreeClass. 
+ When inserting a line, if the tree is empty, and the root is null, the method fills the tree with 
+ the new line. However, if there are pre-existing lines in the tree, it calls in recursively by 
+ considering the calculations in LineCalculation class of figuring out the point
+ of intersection in the two lines of rootline and variable lineinsert which is the line that was just 
+ inserted. If the lines don't intersect, the method checks which side the line of input is on in terms 
+ of the pre-existing root line by calling the ccw method which was givin in the instruction sheet. 
+ If result is either colinear or clockwise, the line would be inserted recursively through the left tree.
+ Whereas if the result is counterclockwise, the line would be inserted recursively through the right tree. 
+ 
+ After the user inputs the coordinates of the line, they are instructed to input the coordinates of the 
+ pairs of points in order to determine whether they're in the same region or not. After creating two separate 
+ points by calling the Point class consisting of x and y coordinates of the input points, it calls in the method
+ checkRegion from the BinaryTreeClass where it compares the paths of the two points of input by calling pathofPoint
+ method. If that of the first and second point are equal, it will provide a print statement that they are in the same
+ region. If not, the other statement. 
+ 
+ The next is to measure the external path length as well as the number of external node represented by counter method.
+ The instruction required average path length which is simply the path divided by number of external nodes. For accuracy,
+ we created such variable as a double. So in every line input, the number of external nodes increase depending on the 
+ existing external nodes. From the root node, the path method determines the empty external nodes with no children and 
+ once the user inputs the coordinates of the line, it passes through the path placing the new external nodes in their 
+ respectable positions down as the pre-existing external nodes' child as it calls upon the parent down the path from the 
+ root node. After the new external node is added to the tree, the counter method is called where it counts down from the 
+ root via the path. 
+ 
+ The extra SAMPLE text file is for extra text material beyond what was given in the instructions for you to freely test. 
+ The expected results are in the OUTPUT text file. 
+ 
+ 
+ 
